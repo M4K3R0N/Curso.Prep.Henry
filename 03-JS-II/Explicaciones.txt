@@ -1,0 +1,11 @@
+For: El for es un bucle de repetición que tiene parametros desde, hasta, y la forma de agregar 
+un numero que vaya incrementando para realiazar esa repetición X veces o hasta que uno lo indique
+
+&&:  Es una comparación que obliga a que las dos partes sean iguales para poder continuar, si una es falsa, el
+resultado va a ser falso
+
+OR:  Es una comparación que si alguna de las dos opciones es true, el resultado va a ser true, 
+de lo contrario va a ser falso.
+
+!:  Es la negación a lo que este indicado. Es decir va a dar el resultado contrario. Al agregar una cantidad par
+de ! Lo que hace es volver a negar lo negado, volviendolo al valor verdadero.
