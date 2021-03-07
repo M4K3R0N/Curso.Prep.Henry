@@ -1,0 +1,9 @@
+Objetos: Los objetos permiten clasificar cosas de la vida real, y asi poder simplificarlo y ordenarlo
+Propiedades: Son las clasificaciones de los objetos
+Métodos: Son las funciones que tiene dentro de un objeto
+Bucle for…in: Es la forma de iterar todas las propiedades de un objeto
+Notación de puntos vs notación de corchetes:
+
+La notacion de puntos, es una manera mas simple de invocar a un objeto y su propiedad,
+pero la notacion de corchete, es la unica forma que permite invocar referencias dentro de la propiedad
+como pasaria en un bucle for in
