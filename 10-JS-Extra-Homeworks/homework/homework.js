@@ -10,14 +10,31 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
+  var matriz = [];
+
+  for (x in objeto){
+    matriz.push ([x, objeto[x]])
+  }
+  return matriz;
 }
 
 
 function numberOfCharacters(string) {
-  //La función recibe un string. Recorre el srting y devuelve el caracter con el número de veces que aparece 
+  //La función recibe un string. Recorre el string y devuelve el caracter con el número de veces que aparece 
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
+    var letras = {};
+
+    for (let i=0; i<string.length; i++){
+      if(Object.keys(letras).includes(string[i])){
+        letras[string[i]] += 1;
+        continue;
+      } 
+      letras[string[i]] = 1;
+    }
+    return letras;
+
 }
 
 
@@ -26,6 +43,18 @@ function capToFront(s) {
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
   //Escribe tu código aquí
+  var cadenaMayus = ''
+  var cadenaMinus = ''
+  for (let i=0; i<s.length ; i++){
+    if (s[i] === s[i].toUpperCase()){
+      cadenaMayus = cadenaMayus +(s[i]);
+      continue;
+    }
+    cadenaMinus = cadenaMinus + s[i];
+  }
+  cadenaMayus = cadenaMayus +cadenaMinus
+  return cadenaMayus;
+
 }
 
 
@@ -34,9 +63,11 @@ function asAmirror(str) {
   //Escribe una función que tome la frase recibida y la devuelva de modo tal que se pueda leer de izquierda a derecha 
   //pero con cada una de sus palabras invertidas, como si fuera un espejo.
   //Ej: Recibe ---> "The Henry Challenge is close!" || Devuelve ---> "ehT yrneH egnellahC si !esolc"
-  //Escribe tu código aquí
-} 
+  //Escribe tu código aquí  A USAR ///SPLIT(SEPARA EN ELEMENTO)  ////   .MAP ()
+  
 
+  
+}
 
 function capicua(numero){
   //Escribe una función, la cual recibe un número y determina si es o no capicúa.
